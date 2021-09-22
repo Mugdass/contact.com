@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/main.css" />
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<style>
+
+<body>
+
+<h2>                    ░▒▓█►─═  ๓ᗩᵗÃş 𝓢ｌᎥ𝕕𝓔𝕊ʰ𝓸ⓦ ═─◄█▓▒░</h2>
+
+<h22>                     Please fill out the FORM right below! </h22>
+<br>
+<p>                          Ｈａｖｅ ａ ｎｉｃｅ ｄａｙ.</p>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+</body>
+
+
+
+
+
+
+<head>
+<title>Registration Form</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/18505/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Your Form is Submitted!:)")
+	  alert("Thank you very much!")
+        },
+        error: function(){
+          alert("Error! Please Try again :(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+  <form id="myForm">
+    <label>First Name</label>
+    
+    <input name="first_name" />
+    
+    <label>Last Name</label>
+    
+    <input name="last_name" />
+    
+    <label>Email</label>
+ 
+    <input name="email" />
+    
+    <label>Phone</label>
+    
+    <input name="phone" />
+    
+    <label>Age</label>
+   
+    <input name="age" />
+    
+    <label>Country</label>
+   
+    <input name="country" />
+   
+    <label>City</label>
+    
+    <input name="city" />
+    
+    <label>Zip Code</label>
+    
+    <input name="zip_code" />
+    
+    <label>Street Address</label>
+    
+    <input name="street_address" />
+    
+    <label>House/Apartment Number</label>
+    
+    <input name="house/apartment_number" />
+   
+    <label>Your Message</label>
+    
+    <textarea name="your_message">
+    </textarea>
+   
+    
+  </form>
+  <button onclick="SubForm()">Submit</button>
+</body>
+
+
+
+
+
+
+
+
+</html> 
+
